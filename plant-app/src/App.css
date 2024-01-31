@@ -1,0 +1,46 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  /* You can adjust the blur effect */
+}
+
+.content {
+  padding: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.preview-container {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+}

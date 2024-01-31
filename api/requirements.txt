@@ -1,0 +1,10 @@
+tensorflow
+fastapi
+uvicorn
+python-multipart
+pillow
+tensorflow-serving-api
+matplotlib
+numpy
+fastapi==0.100.0
+hypercorn==0.14.4
