@@ -18,6 +18,10 @@ Make sure you have the following dependencies installed:
 - TensorFlow
 - Matplotlib
 - MLflow
+-FastAPI
+-ReactJS
+-MaterialUI
+
 
 Install dependencies:
 
@@ -50,6 +54,9 @@ Feel free to open issues or pull requests for improvements. Contributions are we
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+# Backend
+![image](https://github.com/Pradhyumn1/plant_dis/assets/73153956/2c0b33d0-7314-4806-b1e7-60da9e8eb530)
 
 
 # Main page
