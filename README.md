@@ -1,56 +1,45 @@
+# Potato Disease Classification
 
+## Overview
+This project uses a deep learning model to classify diseases in potato plant leaves. It includes a Python script for training the model and a FastAPI backend for making predictions. The frontend is implemented using React.
 
-# PlantVillage Classification Model
+## Project Structure
+- `Disease.ipynb`: Jupyter notebook containing the model training code using TensorFlow and Keras.
+- `api.py`: FastAPI backend for serving the model and handling predictions.
+- `home.js`: React frontend for uploading images and displaying predictions.
 
-This repository contains code for training a plant disease classification model using TensorFlow and deploying it using CI/CD pipelines.
+## Model Training
+To train the model, run the code in `Disease.ipynb`. Adjust parameters such as batch size, image size, and epochs as needed.
 
-## Dataset
+## FastAPI Backend
+- Install required packages: `pip install fastapi[all] uvicorn`.
+- Run the backend: `uvicorn api:app --reload`.
+- Access the backend at `http://localhost:4000`.
 
-The model is trained on the [PlantVillage dataset](https://www.kaggle.com/emmarex/plantdisease).
+## React Frontend
+- Navigate to the `frontend` directory: `cd frontend`.
+- Install dependencies: `npm install`.
+- Start the development server: `npm start`.
+- Open the frontend at `http://localhost:3000`.
 
-## Getting Started
+## Usage
+1. Upload an image of a potato plant leaf on the frontend.
+2. The backend will classify the disease, and the results will be displayed on the frontend.
 
-### Prerequisites
+## File Descriptions
+- `Disease.ipynb`: Model training code.
+- `api.py`: FastAPI backend.
+- `home.js`: React frontend.
+- `saved_model.h5`: Saved model file.
+- `models/`: Directory for saving model versions.
 
-Make sure you have the following dependencies installed:
+## Credits
+- TensorFlow: https://www.tensorflow.org/
+- FastAPI: https://fastapi.tiangolo.com/
+- React: https://reactjs.org/
 
-- Python 3.x
-- TensorFlow
-- Matplotlib
-- MLflow
--FastAPI
--ReactJS
--MaterialUI
+Feel free to customize and extend the project according to your requirements.
 
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-### Training the Model
-
-1. Download the dataset and place it in the specified dataset_path.
-2. Run the training script:
-
-python train_model.py
-
-## CI/CD Pipelines
-
-The repository includes GitHub Actions workflows for continuous integration and deployment.
-
-- **Continuous Integration (CI):** Automatically triggered on every push to the main branch. Checks for code quality, tests, and dependencies.
-
-- **Continuous Deployment (CD):** Automatically triggered on successful CI. Deploys the model using MLflow and creates a release.
-## Model Evaluation
-
-Evaluate the model's performance on the test set:
-
-### Deployment (deployment.txt)
-python deploy_local.py
-
-
-## Contributing
-Feel free to open issues or pull requests for improvements. Contributions are welcome!
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
